@@ -10,11 +10,17 @@ https://golang.org/doc/install
 *Enter cloned directory
 
 This will build the program and run it, using stdin from console
-''' go run runner.go '''
+''' bash
+go run runner.go 
+'''
 
 *Will use test as stdin, output to console 
-''' go run runner.go < test '''
+''' bash 
+go run runner.go < test 
+'''
 
 *This generates runner as an executable
 
-'''go build runner.go '''
+''' bash 
+go build runner.go
+'''
