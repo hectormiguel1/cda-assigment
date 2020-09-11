@@ -7,12 +7,15 @@ https://golang.org/doc/install
 
 Clone repo 
 
+> git clone github.com/hectormiguel1/cda-assigment
+
 Enter cloned directory
+
+> cd cda-assigment 
 
 This will build the program and run it, using stdin from console
 
 > go run runner.go 
-
 
 Will use test as stdin, output to console 
 
