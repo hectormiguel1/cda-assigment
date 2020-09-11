@@ -51,7 +51,7 @@ func main() {
 
 	penaltyTally := 0
 
-	//Empty memory segment (Filled with garbage, valid initialized to 9)
+	//Empty memory segment (Filled with garbage, valid initialized to 0)
 	Cache := make([]MemorySegment, NumOfIndex)
 
 	//Initialize reader, to read from console/stdin
@@ -67,7 +67,7 @@ func main() {
 		operation := strings.ToUpper(splitString[OperationIndex])
 		if operation == EXIT {
 			break
-		} else {
+		} else if operation == ReadOperation || operation == WriteOperation {
 			NumberRead, _ := strconv.Atoi(splitString[DataIndex])
 			data := fmt.Sprintf("%08b", NumberRead)
 			fmt.Printf("Proccesing Operation: %s, Memory: %d. %d as binary: %s \n", operation, NumberRead, NumberRead, data)
